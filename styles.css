@@ -31,7 +31,7 @@ button#menu-btn {
 nav#menu {
     position: fixed;
     top: 15vh; /* Posiciona o menu abaixo do header */
-    left: -25%; /* Esconde o menu */
+    left: -23%; /* Esconde o menu */
     width: 25%; /* Largura máxima do menu */
     height: 85vh; /* Ocupa 85% da altura da tela após o header */
     background-color: #fff; /* Fundo branco para o menu */
