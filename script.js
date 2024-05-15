@@ -4,9 +4,9 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     var menuBtn = document.getElementById('menu-btn');
     if (menu.style.left === '0px') {
         menu.style.left = `-${menuWidth}px`;
-        menuBtn.style.left = '20px'; // Movendo o botão para a posição inicial
+        menuBtn.style.left = '15px'; // Movendo o botão para a posição inicial
     } else {
         menu.style.left = '0';
-        menuBtn.style.left = `${menuWidth -5}px`; // Movendo o botão para a posição do menu
+        menuBtn.style.left = `${menuWidth -20}px`; // Movendo o botão para a posição do menu
     }
 });
