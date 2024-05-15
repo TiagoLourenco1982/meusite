@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+    color: #333; /* Cor do texto */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    height: 15vh; /* Limita o header a 15% da altura da tela */
+    max-height: 150px; /* Limite máximo para o header */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o limite de altura */
+}
+
+img {
+    max-height: 100%; /* Garante que a imagem do header não ultrapasse a altura do header */
+}
+
+button#menu-btn {
+    position: fixed;
+    top: calc(15vh + 20px); /* Posiciona o botão abaixo do header */
+    left: 20px; /* Posiciona o botão no lado esquerdo */
+    width: 35px;
+    height: 35px;
+    background: url(menu-icon.png) no-repeat center center;
+    background-size: cover;
+    border: none;
+    cursor: pointer;
+    z-index: 1; /* Mantém o botão acima do menu */
+}
+
+nav#menu {
+    position: fixed;
+    top: 15vh; /* Posiciona o menu abaixo do header */
+    left: -25%; /* Esconde o menu */
+    width: 25%; /* Largura máxima do menu */
+    height: 85vh; /* Ocupa 85% da altura da tela após o header */
+    background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo do menu */
+    transition: left 0.3s ease;
+    overflow-y: auto;
+}
+
+nav#menu ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+nav#menu ul li {
+    margin-bottom: 10px;
+}
+
+main {
+    margin-top: calc(15vh + 20px); /* Espaço para o header e botão do menu */
+    margin-left: 25%; /* Deixa espaço para o menu */
+    padding: 20px;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    max-width: 100%;
+    height: auto;
+}
