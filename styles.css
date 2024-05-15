@@ -53,6 +53,8 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
+     max-width: 95%; /* Limita a largura máxima do main a 95% da largura da tela */
+    margin: 0 auto;
 }
 
 .block {
@@ -91,11 +93,11 @@ main {
 }
 
 #block1 {
-    flex-basis: calc(50% - 10px); /* Define a largura do bloco 1 (50% do espaço disponível menos margem) */
+    flex-basis: calc(60% - 10px); /* Define a largura do bloco 1 (50% do espaço disponível menos margem) */
 }
 
 #block2 {
-    flex-basis: calc(50% - 10px); /* Define a largura do bloco 2 (50% do espaço disponível menos margem) */
+    flex-basis: calc(40% - 10px); /* Define a largura do bloco 2 (50% do espaço disponível menos margem) */
 }
 
 #block3,
