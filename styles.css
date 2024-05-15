@@ -57,6 +57,20 @@ main {
     margin: 0 auto;
 }
 
+/* Definindo cores para os diferentes tipos de elementos */
+main h1,
+main h2,
+main h3,
+main p {
+    color: black; /* Texto preto para h1, h2, h3 e p */
+}
+
+main h4,
+main h5,
+main h6 {
+    color: gray; /* Texto cinza para h4, h5 e h6 */
+}
+
 .block {
     flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
     margin-bottom: 20px;
