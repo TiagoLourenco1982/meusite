@@ -73,53 +73,26 @@ main h6 {
 
 .block {
     flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Margem inferior entre os blocos */
+    margin-right: 10px; /* Adiciona margem à direita de cada bloco */
     background-color: #f0f0f0;
     padding: 10px;
     box-sizing: border-box; /* Inclui a margem e o preenchimento na largura total */
 }
 
 #block1 {
-    flex-basis: calc(50% - 10px); /* Define a largura do bloco 1 (50% do espaço disponível menos margem) */
+    flex-basis: calc(60% - 10px); /* Define a largura do bloco 1 */
 }
 
 #block2 {
-    flex-basis: calc(50% - 10px); /* Define a largura do bloco 2 (50% do espaço disponível menos margem) */
+    flex-basis: calc(40% - 10px); /* Define a largura do bloco 2 */
 }
 
 #block3,
 #block4,
 #block5 {
-    flex-basis: calc(33.33% - 10px); /* Define a largura dos blocos 3, 4 e 5 (33.33% do espaço disponível menos margem) */
+    flex-basis: calc(33.33% - 10px); /* Define a largura dos blocos 3, 4 e 5 */
 }
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
-}
-
-.block {
-    flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box; /* Inclui a margem e o preenchimento na largura total */
-}
-
-#block1 {
-    flex-basis: calc(60% - 10px); /* Define a largura do bloco 1 (50% do espaço disponível menos margem) */
-}
-
-#block2 {
-    flex-basis: calc(40% - 10px); /* Define a largura do bloco 2 (50% do espaço disponível menos margem) */
-}
-
-#block3,
-#block4,
-#block5 {
-    flex-basis: calc(33.33% - 10px); /* Define a largura dos blocos 3, 4 e 5 (33.33% do espaço disponível menos margem) */
-}
-
 
 .content {
     text-align: center;
