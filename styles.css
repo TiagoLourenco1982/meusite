@@ -34,7 +34,7 @@ nav#menu {
     left: -23%; /* Esconde o menu */
     width: 25%; /* Largura máxima do menu */
     height: 85vh; /* Ocupa 85% da altura da tela após o header */
-    background-color: #fff; /* Fundo branco para o menu */
+    background-color: #ffd700; /* Fundo amarelo para o menu */
     transition: left 0.3s ease;
     overflow-y: auto;
     border-radius: 10px; /* Cantos arredondados */
@@ -53,8 +53,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
-     max-width: 80%; /* Limita a largura máxima do main a 95% da largura da tela */
+     max-width: 95%; /* Limita a largura máxima do main a 95% da largura da tela */
     margin: 0 auto;
+    margin-right: calc(18% + 2%); /* Margem direita igual à largura do menu (18%) + espaçamento entre os elementos (2%) */
 }
 
 /* Definindo cores para os diferentes tipos de elementos */
@@ -74,8 +75,9 @@ main h6 {
 .block {
     flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
     margin-bottom: 20px; /* Margem inferior entre os blocos */
-    background-color: #f0f0f0; /* Cor de fundo dos blocos */
-    padding: 10px; /* Espaçamento interno dos blocos */
+    margin-right: 10px; /* Adiciona margem à direita de cada bloco */
+    background-color: #f0f0f0;
+    padding: 10px;
     box-sizing: border-box; /* Inclui a margem e o preenchimento na largura total */
 }
 
@@ -96,26 +98,26 @@ main h6 {
 .content {
     text-align: center;
 }
-.main-content {
-    flex: 1 0 auto; /* Permite que o conteúdo principal ocupe o espaço restante */
-    max-width: 80%; /* Limita a largura máxima do conteúdo principal */
-    margin-right: 2%; /* Adiciona espaçamento entre a barra lateral e o conteúdo principal */
-}
+
 .content img {
     max-width: 100%;
     height: auto;
 }
 .sidebar {
-    flex: 0 0 18%; /* Define a largura da barra lateral como 18% */
-    max-width: 18%; /* Limita a largura máxima da barra lateral */
+    flex: 0 0 15%; /* Define a largura da barra lateral como 15% */
     background-color: #ccc; /* Cor de fundo da barra lateral */
     padding: 10px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui a padding na largura total */
+}
 
-/* Estilos para os pequenos blocos da barra lateral */
 .small-block {
-    width: 150px; /* Largura do bloco */
-    height: 150px; /* Altura do bloco */
-    background-color: #f0f0f0; /* Cor de fundo do bloco */
+    width: 150px; /* Largura do bloco alterada para 150px */
+    height: 150px; /* Altura do bloco alterada para 150px */
+    background-color: #add8e6; /* Cor de fundo azul claro */
     margin-bottom: 10px; /* Espaçamento entre os blocos */
+}
+
+/* Cor do texto no sidebar alterada para preto */
+.sidebar {
+    color: black; /* Texto preto */
 }
