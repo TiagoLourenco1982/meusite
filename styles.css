@@ -19,7 +19,7 @@ img {
 button#menu-btn {
     position: fixed;
     top: calc(15vh + 20px); /* Posiciona o botão abaixo do header */
-    left: 20px; /* Posiciona o botão no lado esquerdo */
+    left: 13px; /* Posiciona o botão no lado esquerdo */
     width: 35px;
     height: 35px;
     background: url(menu-icon.png) no-repeat center center;
