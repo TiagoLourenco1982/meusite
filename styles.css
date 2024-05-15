@@ -102,3 +102,16 @@ main h6 {
     max-width: 100%;
     height: auto;
 }
+.sidebar {
+    flex: 0 0 15%; /* Define a largura da barra lateral como 15% */
+    background-color: #ccc; /* Cor de fundo da barra lateral */
+    padding: 10px; /* Espaçamento interno */
+    box-sizing: border-box; /* Inclui a padding na largura total */
+}
+
+.small-block {
+    width: 50px; /* Largura do bloco */
+    height: 50px; /* Altura do bloco */
+    background-color: #f0f0f0; /* Cor de fundo do bloco */
+    margin-bottom: 10px; /* Espaçamento entre os blocos */
+}
