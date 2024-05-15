@@ -7,6 +7,6 @@ document.getElementById('menu-btn').addEventListener('click', function() {
         menuBtn.style.left = '20px'; // Movendo o botão para a posição inicial
     } else {
         menu.style.left = '0';
-        menuBtn.style.left = `${menuWidth + 20}px`; // Movendo o botão para a posição do menu
+        menuBtn.style.left = `${menuWidth -5}px`; // Movendo o botão para a posição do menu
     }
 });
