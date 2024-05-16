@@ -23,20 +23,18 @@ header img {
     width: auto;
     height: auto;
 }
-
 button#menu-btn {
     position: fixed;
-    top: 20px;
-    left: 13px;
-    width: 35px;
-    height: 35px;
+    top: calc(15vh + 40px); /* Posiciona o botão 40px abaixo do header */
+    left: 13px; /* Posiciona o botão no lado esquerdo */
+    width: 25px; /* Reduz a largura do botão */
+    height: 25px; /* Reduz a altura do botão */
     background: url(menu-icon.png) no-repeat center center;
     background-size: cover;
     border: none;
     cursor: pointer;
-    z-index: 1;
+    z-index: 1; /* Mantém o botão acima do menu */
 }
-
     
 
 nav#menu {
@@ -61,7 +59,9 @@ nav#menu ul li {
 main {
     flex: 1; /* Ocupa todo o espaço disponível */
     display: flex;
-    flex-direction: column; /* Organiza os elementos em coluna */
+    flex-direction: column;    
+    margin-top: 20px; /* Adiciona margem superior de 20px */
+    margin-left: 200px; /* Adiciona margem à esquerda após o menu lateral *//* Organiza os elementos em coluna */
 }
 
 .block {
