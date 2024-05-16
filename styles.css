@@ -108,7 +108,7 @@ main h6 {
     background-color: #add8e6; /* Azul claro para a sidebar */
     padding: 10px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui o padding na largura total */
-    margin-left: 2%; /* Adiciona margem à esquerda para o espaçamento entre o main e a sidebar */
+    margin-left: auto; /* Alinha a sidebar à direita do main */
 }
 
 .small-block {
