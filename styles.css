@@ -114,4 +114,5 @@ main {
     justify-content: center; /* Centraliza o conteúdo horizontalmente */
     color: #fff; /* Cor do texto para contraste */
     box-sizing: border-box;
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
