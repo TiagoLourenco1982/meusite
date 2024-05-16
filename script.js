@@ -7,10 +7,10 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     if (menu.style.left === '0px' || menu.style.left === '') {
         menu.style.left = `-${menuWidth}px`;
         menuBtn.style.left = '20px'; // Movendo o botão para a posição inicial
-        mainContent.classList.remove('main-expanded'); // Removendo a classe main-expanded quando o menu é recolhido
+        mainContent.style.marginLeft = '0'; // Ajuste da margem do conteúdo principal
     } else {
         menu.style.left = '15px'; // Definindo a posição do menu para 15 pixels da margem esquerda
         menuBtn.style.left = `${menuWidth - 20}px`; // Movendo o botão para a posição do menu
-        mainContent.classList.add('main-expanded'); // Adicionando a classe main-expanded quando o menu é expandido
+        mainContent.style.marginLeft = `${menuWidth}px`; // Ajuste da margem do conteúdo principal
     }
 });
