@@ -94,7 +94,7 @@ main {
     height: 0; /* Zera a altura para manter a proporção quadrada */
     padding-top: calc(100% - 20px); /* Define a altura dos blocos igual à largura */
     margin-bottom: 10px; /* Espaçamento entre os blocos */
-    background-color: #add8e6; /* Cor de fundo dos blocos */
+    background-color: #6c91a1; /* Cor de fundo dos blocos */
     border-radius: 5px; /* Adiciona cantos arredondados */
     overflow: hidden; /* Garante que o conteúdo dentro dos blocos não ultrapasse */
 }
