@@ -54,10 +54,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 78%;
     margin: 0 auto;
     margin-right: 2%; /* Adicione uma margem à direita de 2% para o espaçamento entre o main e o sidebar */
-    margin-left: 0; /* Defina a margem esquerda como 0 */
+    margin-left: 20px; /* Defina a margem esquerda como 0 */
 }
 
 /* Ajuste da margem do conteúdo principal quando o menu está expandido */
