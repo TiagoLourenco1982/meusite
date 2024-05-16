@@ -89,3 +89,12 @@ main {
     box-sizing: border-box;
     margin-left: 0; /* Não definir margem esquerda inicialmente */
 }
+.small-block {
+    width: calc(100% - 20px); /* Define a largura dos blocos igual à largura da sidebar menos as margens */
+    height: 0; /* Zera a altura para manter a proporção quadrada */
+    padding-top: calc(100% - 20px); /* Define a altura dos blocos igual à largura */
+    margin-bottom: 10px; /* Espaçamento entre os blocos */
+    background-color: #add8e6; /* Cor de fundo dos blocos */
+    border-radius: 5px; /* Adiciona cantos arredondados */
+    overflow: hidden; /* Garante que o conteúdo dentro dos blocos não ultrapasse */
+}
