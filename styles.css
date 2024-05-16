@@ -53,12 +53,10 @@ nav#menu ul li {
 }
 
 main {
-    flex: 1;
-    max-width: 80%;
-    margin-right: 20px; /* Adicionando um espaçamento à direita */
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row; /* Organiza os elementos em linha */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+    align-items: flex-start; /* Alinha os elementos ao topo */
 }
 
 .block {
