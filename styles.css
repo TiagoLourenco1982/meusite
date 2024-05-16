@@ -58,7 +58,16 @@ main {
     justify-content: space-between; /* Distribui os elementos horizontalmente */
     align-items: flex-start; /* Alinha os elementos ao topo */
 }
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 
+.bottom-section {
+    display: flex;
+    justify-content: space-between;
+}
 .block {
     flex: 1 0 auto;
     margin-bottom: 20px;
