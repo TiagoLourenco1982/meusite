@@ -66,7 +66,8 @@ main {
 
 .block {
     flex: 1 0 auto;
-    margin-bottom: 20px;
+       margin: 0 10px 20px; /* Margem superior e inferior de 20px, margem esquerda e direita de 10px */
+    border-radius: 10px; /* Cantos arredondados */
     background-color: #fff; /* Cor de fundo branca para os blocos */
     padding: 20px;
     box-sizing: border-box;
