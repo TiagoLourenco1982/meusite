@@ -27,7 +27,7 @@ header img {
 button#menu-btn {
     position: fixed;
     top: calc(15vh + 40px); /* Posiciona o botão 40px abaixo do header */
-    left: 13px; /* Posiciona o botão no lado esquerdo */
+    left: 20px; /* Posição inicial do botão */
     width: 25px; /* Reduz a largura do botão */
     height: 25px; /* Reduz a altura do botão */
     background: url(menu-icon.png) no-repeat center center;
@@ -38,10 +38,9 @@ button#menu-btn {
 }
     
 nav#menu {
-    margin-left: 2; /* Remove a margem quando o menu está aberto */
     position: fixed;
     top: 15vh;
-    left: -23%;
+    left: -80%; /* Posição inicial, parcialmente escondido com 20px visíveis */
     width: 25%;
     height: 85vh;
     background-color: #fff;
@@ -61,7 +60,7 @@ main {
     display: flex;
     flex-direction: column;    
     margin-top: 20px; /* Adiciona margem superior de 20px */
-    margin-left: 200px; /* Adiciona margem à esquerda após o menu lateral */
+    margin-left: 220px; /* Ajuste para acomodar a posição inicial do menu */
     background-color: #e6e9ec; /* Cor de fundo diferente dos blocos */
     padding: 20px;
     box-sizing: border-box;
@@ -80,7 +79,7 @@ main {
 .block img {
     position: absolute;
     top: 20px; /* Ajuste conforme necessário */
-    left: 20px; /* Ajuste conforme necessário */
+    right: 20px; /* Posição no canto superior direito */
     width: 25%; /* 1/4 do bloco */
     height: auto;
 }
