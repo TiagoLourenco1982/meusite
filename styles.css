@@ -1,118 +1,19 @@
-/* Adicione ou modifique estilos conforme necessário */
-body {
-    background-color: #f0f5f9; /* Cor de fundo azul clara */
-    color: #333; /* Texto em tom escuro para melhor contraste */
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+document.getElementById('menu-btn').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    var menuWidth = menu.offsetWidth;
+    var menuBtn = document.getElementById('menu-btn');
+    var mainContent = document.querySelector('main');
+    var sidebar = document.querySelector('.sidebar');
 
-.content-wrapper {
-    display: flex; /* Usar flexbox para organizar o layout */
-}
-
-header {
-    text-align: center;
-    padding: 20px 0;
-    max-height: 150px; /* Limite máximo para o header */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o limite de altura */
-}
-
-header img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
-}
-
-button#menu-btn {
-    position: fixed;
-    top: calc(15vh + 40px); /* Posiciona o botão 40px abaixo do header */
-    left: 13px; /* Posiciona o botão no lado esquerdo */
-    width: 25px; /* Reduz a largura do botão */
-    height: 25px; /* Reduz a altura do botão */
-    background: url(menu-icon.png) no-repeat center center;
-    background-size: cover;
-    border: none;
-    cursor: pointer;
-    z-index: 1; /* Mantém o botão acima do menu */
-}
-    
-nav#menu {
-    margin-left: 2; /* Remove a margem quando o menu está aberto */
-    position: fixed;
-    top: 15vh;
-    left: -23%;
-    width: 25%;
-    height: 85vh;
-    background-color: #fff;
-    transition: left 0.3s ease;
-    overflow-y: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-nav#menu ul li {
-    margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
-}
-
-main {
-    flex: 1; /* Ocupa todo o espaço disponível */
-    display: flex;
-    flex-direction: column;    
-    margin-top: 20px; /* Adiciona margem superior de 20px */
-    margin-left: 200px; /* Adiciona margem à esquerda após o menu lateral */
-    background-color: #e6e9ec; /* Cor de fundo diferente dos blocos */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.block {
-    flex: 1 0 auto;
-    margin: 0 10px 20px; /* Margem superior e inferior de 20px, margem esquerda e direita de 10px */
-    border-radius: 10px; /* Cantos arredondados */
-    background-color: #fff; /* Cor de fundo branca para os blocos */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.block-link {
-    display: block;
-    text-decoration: none; /* Remove a sublinha dos links */
-    color: inherit; /* Mantém a cor do texto dos blocos */
-}
-
-.top-section {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.bottom-section {
-    display: flex;
-    justify-content: space-between;
-}
-
-.sidebar {
-    flex: 0 0 auto; /* Fixa a largura da sidebar */
-    background-color: #add8e6; /* Cor de fundo azul claro para a sidebar */
-    padding: 10px;
-    box-sizing: border-box;
-    margin-left: 0; /* Não definir margem esquerda inicialmente */
-}
-
-.small-block {
-    width: calc(100% - 20px); /* Define a largura dos blocos igual à largura da sidebar menos as margens */
-    height: 0; /* Zera a altura para manter a proporção quadrada */
-    padding-top: calc(100% - 20px); /* Define a altura dos blocos igual à largura */
-    margin-bottom: 10px; /* Espaçamento entre os blocos */
-    background-color: #6c91a1; /* Cor de fundo dos blocos */
-    border-radius: 5px; /* Adiciona cantos arredondados */
-    overflow: hidden; /* Garante que o conteúdo dentro dos blocos não ultrapasse */
-    display: flex; /* Torna os blocos flexíveis */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    color: #fff; /* Cor do texto para contraste */
-    box-sizing: border-box;
-    text-align: center; /* Centraliza o texto horizontalmente */
-}
+    if (menu.style.left === '0px' || menu.style.left === '') {
+        menu.style.left = `-${menuWidth}px`;
+        menuBtn.style.left = '13px'; // Movendo o botão para a posição inicial
+        mainContent.style.marginLeft = '0'; // Resetando a margem esquerda do main
+        sidebar.style.marginLeft = '0'; // Recuando o sidebar para a posição original
+    } else {
+        menu.style.left = '0';
+        menuBtn.style.left = `${menuWidth + 13}px`; // Movendo o botão para a posição do menu
+        mainContent.style.marginLeft = `${menuWidth}px`; // Ajustando a margem esquerda do main
+        sidebar.style.marginLeft = `${menuWidth + 2}%`; // Ajustando a margem esquerda do sidebar
+    }
+});
