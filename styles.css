@@ -74,6 +74,15 @@ main {
     background-color: #fff; /* Cor de fundo branca para os blocos */
     padding: 20px;
     box-sizing: border-box;
+    position: relative; /* Necessário para o posicionamento absoluto da imagem */
+}
+
+.block img {
+    position: absolute;
+    top: 20px; /* Ajuste conforme necessário */
+    left: 20px; /* Ajuste conforme necessário */
+    width: 25%; /* 1/4 do bloco */
+    height: auto;
 }
 
 .block-link {
