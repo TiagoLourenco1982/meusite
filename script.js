@@ -3,16 +3,15 @@ document.getElementById('menu-btn').addEventListener('click', function() {
     var menuWidth = menu.offsetWidth;
     var menuBtn = document.getElementById('menu-btn');
     var mainContent = document.querySelector('main');
+    var sidebar = document.querySelector('.sidebar');
 
-    if (menu.style.left === '0px') {
+    if (menu.style.left === '0px' || menu.style.left === '') {
         menu.style.left = `-${menuWidth}px`;
-        menuBtn.style.left = '15px'; // Movendo o botão para a posição inicial
-        menuBtn.style.left = '20px'; // Movendo o botão para a posição inicial
-        mainContent.style.marginLeft = '20px'; // Ajuste da margem do conteúdo principal
+        mainContent.style.marginLeft = '0'; // Resetar a margem do conteúdo principal
+        sidebar.style.marginRight = '0'; // Resetar a margem do sidebar
     } else {
         menu.style.left = '0';
-        menuBtn.style.left = `${menuWidth -20}px`; // Movendo o botão para a posição do menu
-        menuBtn.style.left = `${menuWidth - 10}px`; // Movendo o botão para a posição do menu
-        mainContent.style.marginLeft = `${menuWidth}px`; // Ajuste da margem do conteúdo principal
+        mainContent.style.marginLeft = `${menuWidth}px`; // Ajustar a margem do conteúdo principal
+        sidebar.style.marginRight = `${menuWidth}px`; // Ajustar a margem do sidebar
     }
 });
