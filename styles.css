@@ -1,9 +1,10 @@
 body {
-    background-color: #87ceeb; /* Cor de fundo alterada para um tom mais escuro */
+    background-color: #2c3e50; /* Cor de fundo alterada para um tom mais escuro */
     color: #fff; /* Texto em branco para melhor contraste */
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 header {
     text-align: center;
     padding: 20px 0;
@@ -28,13 +29,14 @@ button#menu-btn {
     cursor: pointer;
     z-index: 1; /* Mantém o botão acima do menu */
 }
+
 nav#menu {
     position: fixed;
     top: 15vh; /* Posiciona o menu abaixo do header */
     left: -23%; /* Esconde o menu */
     width: 25%; /* Largura máxima do menu */
     height: 85vh; /* Ocupa 85% da altura da tela após o header */
-    background-color: #87dbeb; /* Fundo para o menu */
+    background-color: #fff; /* Fundo branco para o menu */
     transition: left 0.3s ease;
     overflow-y: auto;
     border-radius: 10px; /* Cantos arredondados */
@@ -45,26 +47,15 @@ nav#menu ul li {
     margin-bottom: 10px;
     border-bottom: 1px solid #ccc; /* Linha separando os itens do menu */
 }
-nav#menu ul li {
-    margin-bottom: 10px;
-}
 
-/* Ajuste da margem do conteúdo principal quando o menu está recolhido */
 main {
+    flex: 1; /* Ocupa o restante do espaço disponível */
+    max-width: 80%; /* Limita a largura máxima do main a 80% */
+    margin-right: 2%; /* Adiciona margem à direita para o espaçamento entre o main e a sidebar */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 78%;
-    margin: 0 auto;
-    margin-right: 2%; /* Adicione uma margem à direita de 2% para o espaçamento entre o main e o sidebar */
-    margin-left: 20px; /* Defina a margem esquerda como 0 */
+    justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
 }
-
-/* Ajuste da margem do conteúdo principal quando o menu está expandido */
-.main-expanded {
-    margin-left: 20%; /* Ajuste da margem do conteúdo principal quando o menu está expandido */
-}
-
 
 /* Definindo cores para os diferentes tipos de elementos */
 main h1,
@@ -84,7 +75,7 @@ main h6 {
     flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
     margin-bottom: 20px; /* Margem inferior entre os blocos */
     margin-right: 10px; /* Adiciona margem à direita de cada bloco */
-    background-color: #87dbeb;
+    background-color: #f0f0f0;
     padding: 10px;
     box-sizing: border-box; /* Inclui a margem e o preenchimento na largura total */
 }
@@ -111,21 +102,18 @@ main h6 {
     max-width: 100%;
     height: auto;
 }
+
 .sidebar {
-    flex: 0 0 18%; /* Define a largura da barra lateral como 15% */
-    background-color: #5e9aa4; /* Cor de fundo da barra lateral */
+    flex: 0 0 18%; /* Define a largura da sidebar como 18% */
+    background-color: lightblue; /* Cor de fundo da sidebar */
     padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui a padding na largura total */
+    box-sizing: border-box; /* Inclui o padding na largura total */
+    margin-left: 2%; /* Adiciona margem à esquerda para o espaçamento entre o main e a sidebar */
 }
 
 .small-block {
-    width: 150px; /* Largura do bloco alterada para 150px */
-    height: 150px; /* Altura do bloco alterada para 150px */
-    background-color: #87dbeb; /* Cor de fundo azul claro */
+    width: 150px; /* Largura do bloco */
+    height: 150px; /* Altura do bloco */
+    background-color: #add8e6; /* Cor de fundo do bloco */
     margin-bottom: 10px; /* Espaçamento entre os blocos */
-}
-
-/* Cor do texto no sidebar alterada para preto */
-.sidebar {
-    color: black; /* Texto preto */
 }
