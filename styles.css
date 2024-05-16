@@ -64,6 +64,7 @@ main {
     background-color: #e6e9ec; /* Cor de fundo diferente dos blocos */
     padding: 20px;
     box-sizing: border-box;
+       min-width: 200px; /* Define o valor mínimo para a largura do main */
 }
 
 .block {
