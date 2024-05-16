@@ -49,14 +49,22 @@ nav#menu ul li {
     margin-bottom: 10px;
 }
 
+/* Ajuste da margem do conteúdo principal quando o menu está recolhido */
 main {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     max-width: 80%;
     margin: 0 auto;
-    margin-right: 1%; /* Adicione uma margem à direita de 2% para o espaçamento entre o main e o sidebar */
+    margin-right: 2%; /* Adicione uma margem à direita de 2% para o espaçamento entre o main e o sidebar */
+    margin-left: 0; /* Defina a margem esquerda como 0 */
 }
+
+/* Ajuste da margem do conteúdo principal quando o menu está expandido */
+.main-expanded {
+    margin-left: 20%; /* Ajuste da margem do conteúdo principal quando o menu está expandido */
+}
+
 
 /* Definindo cores para os diferentes tipos de elementos */
 main h1,
