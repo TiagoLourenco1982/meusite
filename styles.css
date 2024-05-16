@@ -34,7 +34,10 @@ button#menu-btn {
     z-index: 1;
 }
 
+    
+
 nav#menu {
+    margin-left: 2; /* Remove a margem quando o menu está aberto */
     position: fixed;
     top: 15vh;
     left: -23%;
@@ -53,10 +56,17 @@ nav#menu ul li {
 }
 
 main {
+    flex: 1; /* Ocupa todo o espaço disponível */
     display: flex;
-    flex-direction: row; /* Organiza os elementos em linha */
-    justify-content: space-between; /* Distribui os elementos horizontalmente */
-    align-items: flex-start; /* Alinha os elementos ao topo */
+    flex-direction: column; /* Organiza os elementos em coluna */
+}
+
+.block {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff; /* Cor de fundo branca para os blocos */
+    padding: 20px;
+    box-sizing: border-box;
 }
 .top-section {
     display: flex;
@@ -68,16 +78,8 @@ main {
     display: flex;
     justify-content: space-between;
 }
-.block {
-    flex: 1 0 auto;
-    margin-bottom: 20px;
-    background-color: #fff; /* Cor de fundo branca para os blocos */
-    padding: 20px;
-    box-sizing: border-box;
-}
-
 .sidebar {
-    width: 18%; /* Largura da sidebar */
+    flex: 0 0 auto; /* Fixa a largura da sidebar */
     background-color: #add8e6; /* Cor de fundo azul claro para a sidebar */
     padding: 10px;
     box-sizing: border-box;
