@@ -52,10 +52,10 @@ nav#menu ul li {
 main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
-     max-width: 95%; /* Limita a largura máxima do main a 95% da largura da tela */
+    justify-content: space-between;
+    max-width: 80%;
     margin: 0 auto;
-    margin-right: calc(18% + 2%); /* Margem direita igual à largura do menu (18%) + espaçamento entre os elementos (2%) */
+    margin-right: 1%; /* Adicione uma margem à direita de 2% para o espaçamento entre o main e o sidebar */
 }
 
 /* Definindo cores para os diferentes tipos de elementos */
@@ -104,7 +104,7 @@ main h6 {
     height: auto;
 }
 .sidebar {
-    flex: 0 0 15%; /* Define a largura da barra lateral como 15% */
+    flex: 0 0 18%; /* Define a largura da barra lateral como 15% */
     background-color: #ccc; /* Cor de fundo da barra lateral */
     padding: 10px; /* Espaçamento interno */
     box-sizing: border-box; /* Inclui a padding na largura total */
