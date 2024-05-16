@@ -1,14 +1,18 @@
+/* Adicione ou modifique estilos conforme necessário */
 body {
-    background-color: #dbe7ff; /* Azul claro */
-    color: #333; /* Texto escuro para contraste */
+    background-color: #f0f5f9; /* Cor de fundo azul clara */
+    color: #333; /* Texto em tom escuro para melhor contraste */
     margin: 0;
     font-family: Arial, sans-serif;
+}
+
+.content-wrapper {
+    display: flex; /* Usar flexbox para organizar o layout */
 }
 
 header {
     text-align: center;
     padding: 20px 0;
-    height: 15vh; /* Limita o header a 15% da altura da tela */
     max-height: 150px; /* Limite máximo para o header */
     overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o limite de altura */
 }
@@ -19,101 +23,56 @@ img {
 
 button#menu-btn {
     position: fixed;
-    top: calc(15vh + 20px); /* Posiciona o botão abaixo do header */
-    left: 13px; /* Posiciona o botão no lado esquerdo */
+    top: 20px;
+    left: 13px;
     width: 35px;
     height: 35px;
     background: url(menu-icon.png) no-repeat center center;
     background-size: cover;
     border: none;
     cursor: pointer;
-    z-index: 1; /* Mantém o botão acima do menu */
+    z-index: 1;
 }
 
 nav#menu {
     position: fixed;
-    top: 15vh; /* Posiciona o menu abaixo do header */
-    left: -23%; /* Esconde o menu */
-    width: 25%; /* Largura máxima do menu */
-    height: 85vh; /* Ocupa 85% da altura da tela após o header */
-    background-color: #fff; /* Fundo branco para o menu */
+    top: 15vh;
+    left: -23%;
+    width: 25%;
+    height: 85vh;
+    background-color: #fff;
     transition: left 0.3s ease;
     overflow-y: auto;
-    border-radius: 10px; /* Cantos arredondados */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 nav#menu ul li {
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc; /* Linha separando os itens do menu */
+    border-bottom: 1px solid #ccc;
 }
 
 main {
-    flex: 1; /* Ocupa o restante do espaço disponível */
-    max-width: 80%; /* Limita a largura máxima do main a 80% */
-    margin-right: 2%; /* Adiciona margem à direita para o espaçamento entre o main e a sidebar */
+    flex: 1;
+    max-width: 80%;
+    margin-right: 20px; /* Adicionando um espaçamento à direita */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Distribui os blocos horizontalmente com espaço entre eles */
-}
-
-/* Definindo cores para os diferentes tipos de elementos */
-main h1,
-main h2,
-main h3,
-main p {
-    color: black; /* Texto preto para h1, h2, h3 e p */
-}
-
-main h4,
-main h5,
-main h6 {
-    color: gray; /* Texto cinza para h4, h5 e h6 */
+    justify-content: space-between;
 }
 
 .block {
-    flex: 1 0 auto; /* Permite que os blocos tenham flexibilidade na largura */
-    margin-bottom: 20px; /* Margem inferior entre os blocos */
-    margin-right: 10px; /* Adiciona margem à direita de cada bloco */
-    background-color: #f0f0f0;
-    padding: 10px;
-    box-sizing: border-box; /* Inclui a margem e o preenchimento na largura total */
-}
-
-#block1 {
-    flex-basis: calc(60% - 10px); /* Define a largura do bloco 1 */
-}
-
-#block2 {
-    flex-basis: calc(40% - 10px); /* Define a largura do bloco 2 */
-}
-
-#block3,
-#block4,
-#block5 {
-    flex-basis: calc(33.33% - 10px); /* Define a largura dos blocos 3, 4 e 5 */
-}
-
-.content {
-    text-align: center;
-}
-
-.content img {
-    max-width: 100%;
-    height: auto;
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    background-color: #fff; /* Cor de fundo branca para os blocos */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .sidebar {
-    flex: 0 0 18%; /* Define a largura da sidebar como 18% */
-    background-color: #add8e6; /* Azul claro para a sidebar */
-    padding: 10px; /* Espaçamento interno */
-    box-sizing: border-box; /* Inclui o padding na largura total */
-    margin-left: auto; /* Alinha a sidebar à direita do main */
-}
-
-.small-block {
-    width: 150px; /* Largura do bloco */
-    height: 150px; /* Altura do bloco */
-    background-color: #fff; /* Fundo branco para os blocos */
-    margin-bottom: 10px; /* Espaçamento entre os blocos */
+    width: 18%; /* Largura da sidebar */
+    background-color: #add8e6; /* Cor de fundo azul claro para a sidebar */
+    padding: 10px;
+    box-sizing: border-box;
+    margin-left: 0; /* Não definir margem esquerda inicialmente */
 }
