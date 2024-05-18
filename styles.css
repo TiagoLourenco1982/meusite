@@ -7,8 +7,7 @@ body {
 
 .content-wrapper {
     display: flex; /* Usar flexbox para organizar o layout */
-    flex-direction: row; /* Organizar os filhos em linha */
-    height: 100vh; /* Garantir que o conteúdo ocupe a altura total da janela */
+    height: calc(100vh - 150px); /* Altura da tela menos a altura do cabeçalho */
 }
 
 header {
@@ -25,16 +24,8 @@ header img {
     height: auto;
 }
 
-button#menu-btn {
-    display: none; /* Esconder o botão de menu, pois o menu ficará sempre visível */
-}
-    
 nav#menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 20%;
-    height: 100vh;
+    width: 20%; /* Largura fixa para o menu */
     background-color: #fff;
     padding: 5px; /* Padding de 5px para os conteúdos do menu */
     overflow-y: auto;
@@ -55,7 +46,6 @@ nav#menu ul li {
 
 main {
     flex: 1; /* Ocupa todo o espaço disponível */
-    margin: 20px; /* Adiciona margem de 20px ao redor */
     background-color: #e6e9ec; /* Cor de fundo diferente dos blocos */
     padding: 20px;
     box-sizing: border-box;
@@ -88,13 +78,12 @@ main {
 }
 
 .sidebar {
-    flex: 0 0 20%; /* Define a largura fixa da sidebar */
+    width: 20%; /* Define a largura fixa da sidebar */
     background-color: #add8e6; /* Cor de fundo azul claro para a sidebar */
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column; /* Empilha os blocos verticalmente */
-    margin-left: auto; /* Coloca a sidebar no lado direito */
 }
 
 .small-block {
