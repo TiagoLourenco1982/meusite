@@ -1,102 +1,91 @@
 body {
-    background-color: #f0f5f9; /* Cor de fundo azul clara */
-    color: #333; /* Texto em tom escuro para melhor contraste */
-    margin: 0;
     font-family: Arial, sans-serif;
-}
-
-.content-wrapper {
-    display: flex; /* Usar flexbox para organizar o layout */
-    height: calc(100vh - 150px); /* Altura da tela menos a altura do cabeçalho */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    text-align: center;
-    padding: 5px 0;
-    max-height: 150px; /* Limite máximo para o header */
-    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse o limite de altura */
+    width: 100%;
+    max-height: 150px;
+    overflow: hidden;
 }
 
 header img {
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
+    width: 100%;
     height: auto;
-}
-
-nav#menu {
-    width: 20%; /* Largura fixa para o menu */
-    background-color: #fff;
-    padding: 5px; /* Padding de 5px para os conteúdos do menu */
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-right: 1px solid #ccc; /* Adicionar uma borda à direita */
-}
-
-nav#menu ul {
-    list-style-type: none; /* Remover estilo padrão da lista */
-    padding: 0; /* Remover padding padrão da lista */
-    margin: 0; /* Remover margem padrão da lista */
-}
-
-nav#menu ul li {
-    padding: 5px; /* Padding de 5px para os itens do menu */
-    border-bottom: 1px solid #ccc; /* Linha de separação entre os itens */
-}
-
-main {
-    flex: 1; /* Ocupa todo o espaço disponível */
-    background-color: #e6e9ec; /* Cor de fundo diferente dos blocos */
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap; /* Permite que os blocos se ajustem em várias linhas, se necessário */
-}
-
-.block {
-    flex: 1 0 calc(33.333% - 40px); /* Ajusta a largura dos blocos para 1/3 do main menos a margem */
-    margin: 10px; /* Margem de 10px ao redor dos blocos */
-    border-radius: 10px; /* Cantos arredondados */
-    background-color: #fff; /* Cor de fundo branca para os blocos */
-    padding: 20px;
-    box-sizing: border-box;
-    position: relative; /* Necessário para o posicionamento absoluto da imagem */
-}
-
-.block img {
-    position: absolute;
-    top: 20px; /* Ajuste conforme necessário */
-    right: 20px; /* Posição no canto superior direito */
-    width: 25%; /* 1/4 do bloco */
-    height: auto;
-}
-
-.block-link {
     display: block;
-    text-decoration: none; /* Remove a sublinha dos links */
-    color: inherit; /* Mantém a cor do texto dos blocos */
 }
 
-.sidebar {
-    width: 20%; /* Define a largura fixa da sidebar */
-    background-color: #add8e6; /* Cor de fundo azul claro para a sidebar */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.menu {
+    width: 15%;
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin-bottom: 5px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main {
+    width: 65%;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 5px; /* Define o espaçamento vertical entre as linhas de blocos */
+    column-gap: 10px; /* Define o espaçamento horizontal entre as colunas de blocos */
+}
+
+.main .bloco {
+    width: calc(33.33% - 20px);
+    max-height: 200px; /* Limitar a altura dos blocos */
+    background-color: #e4e4e4;
     padding: 10px;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column; /* Empilha os blocos verticalmente */
+    border: 1px solid #ccc;
+    overflow: hidden; /* Esconder conteúdo excedente */
 }
 
-.small-block {
-    width: 100%; /* Largura total da sidebar */
-    margin-bottom: 10px; /* Espaçamento entre os blocos */
-    background-color: #6c91a1; /* Cor de fundo dos blocos */
-    border-radius: 5px; /* Adiciona cantos arredondados */
-    overflow: hidden; /* Garante que o conteúdo dentro dos blocos não ultrapasse */
-    display: flex; /* Torna os blocos flexíveis */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    color: #fff; /* Cor do texto para contraste */
-    box-sizing: border-box;
-    text-align: center; /* Centraliza o texto horizontalmente */
-    padding: 10px; /* Adiciona padding interno */
+.main .bloco p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3; /* Limitar número de linhas do parágrafo */
+    overflow: hidden;
+}
+
+.anuncios {
+    width: 20%;
+    padding: 10px;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.anuncios .anuncio {
+    background-color: #e4e4e4;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
