@@ -94,7 +94,7 @@ header img {
 .main .bloco.grande {
     grid-column: span 3;
     height: 300px;
-    min-width: 40%;
+    min-width: 120px;
     max-width: 49%;
     border-radius: 10px;
 }
