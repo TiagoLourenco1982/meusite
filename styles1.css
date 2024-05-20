@@ -43,6 +43,7 @@ header img {
     text-decoration: none;
     color: #333;
 }
+
 .main {
     width: 65%;
     padding: 10px;
@@ -50,6 +51,15 @@ header img {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(200px, auto);
     gap: 10px;
+}
+
+.main2 {
+    width: 65%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
 }
 
 .main .bloco {
@@ -60,12 +70,13 @@ header img {
     border: 1px solid #ccc;
     overflow: hidden;
     position: relative;
-    grid-column: span 1; /* Cada bloco ocupa uma coluna por padrão */
+    grid-column: span 1;
+    border-radius: 10px;
 }
 
 .main .bloco:nth-child(-n+2) {
-    grid-row: 1; /* Faz os dois primeiros blocos ocuparem a primeira linha */
-    grid-column: span 2; /* Cada bloco grande ocupa duas colunas */
+    grid-row: 1;
+    grid-column: span 2;
 }
 
 .main .bloco img {
@@ -79,11 +90,13 @@ header img {
     padding: 10px;
     flex-grow: 1;
 }
+
 .main .bloco.grande {
     grid-column: span 3;
-    height: 300px; /* Ajuste a altura conforme necessário */
+    height: 300px;
     min-width: 40%;
     max-width: 49%;
+    border-radius: 10px;
 }
 
 .anuncios {
@@ -106,6 +119,7 @@ header img {
     align-items: center;
     max-height: 150px;
     overflow: hidden;
+    border-radius: 7px;
 }
 
 .extra-section {
@@ -128,4 +142,16 @@ header img {
     justify-content: center;
     border: 1px solid #999;
     box-sizing: border-box;
+    border-radius: 5px;
+}
+
+h6 {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.main2 img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
 }
