@@ -1,42 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Notícia Relevante</title>
+    <link rel="stylesheet" href="styles2.css">
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="imagemdohead.jpg" alt="Cabeçalho"></a>
+        <a href="index1.html">
+            <img src="imagemdohead.jpg" alt="Imagem do Header">
+        </a>
     </header>
-    <button id="menu-btn"><img src="menu-icon.png" alt="Menu"></button>
-    <nav id="menu">
+    <div class="container">
+        <section class="menu">
             <ul>
-            <li><a href="index.html">Página Principal</a></li>
-            <!-- Adicione outras páginas conforme necessário -->
-            <li><a href="estudos.html">Estudos e formação</a></li>
-            <li><a href="eventos.html">Eventos </a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="Item4.html">Galeria de foto</a></li>
-            <li><a href="Item5.html">Item 5</a></li>
-            <li><a href="Item6.html">Item 6</a></li>
-            <li><a href="Item7.html">Item 7</a></li>
-            <li><a href="Item8.html">Item 8</a></li>
-            <li><a href="Item9.html">Item 9</a></li>
-            <li><a href="Item10.html">Item 10</a></li>
-            <li><a href="Item11.html">Item 11</a></li>
-            <li><a href="Item12.html">Item 12</a></li>
-        </ul>
-    </nav>
-    <main>
-        <div class="content">
-            <h1>Eventos</h1>
-            <h2>Subtítulo</h2>
-            <p> Texto falando que teve um evento na data tal, em tal horário.
-       <img src="imagemilustra.jpg" alt="Ilustração">
-        </div>
-    </main>
-    <script src="script.js"></script>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="estudos.html">Estudos e formação</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="Item4.html">Galeria de foto</a></li>
+                <script>
+                    for (let i = 5; i <= 20; i++) {
+                        document.write(`<li><a href="Item${i}.html">Item ${i}</a></li>`);
+                    }
+                </script>
+            </ul>
+        </section>
+        <section class="main">
+            <div class="bloco unico">
+                <img src="imagemilustra.jpg" alt="Imagem Ilustrativa">
+                <div class="texto">
+                    <h1>Notícia Relevante</h1>
+                    <h6>Lead da notícia</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <img src="imagemilustra.jpg" alt="Imagem Ilustrativa">
+                    <img src="imagemilustra.jpg" alt="Imagem Ilustrativa">
+                    
+                </div>
+            </div>
+        </section>
+        <section class="anuncios">
+            <a href="anuncio1.html" class="anuncio">Anúncio 1</a>
+            <a href="anuncio2.html" class="anuncio">Anúncio 2</a>
+            <a href="anuncio3.html" class="anuncio">Anúncio 3</a>
+        </section>
+    </div>
+    <section class="extra-section">
+        <a href="bloco1.html" class="extra-block">Bloco 1</a>
+        <a href="bloco2.html" class="extra-block">Bloco 2</a>
+        <a href="bloco3.html" class="extra-block">Bloco 3</a>
+        <a href="bloco4.html" class="extra-block">Bloco 4</a>
+        <a href="bloco5.html" class="extra-block">Bloco 5</a>
+        <a href="bloco6.html" class="extra-block">Bloco 6</a>
+        <a href="bloco7.html" class="extra-block">Bloco 7</a>
+        <a href="bloco8.html" class="extra-block">Bloco 8</a>
+        <a href="bloco9.html" class="extra-block">Bloco 9</a>
+        <a href="bloco10.html" class="extra-block">Bloco 10</a>
+    </section>
 </body>
 </html>
